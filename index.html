@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/hw_4/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Мои заметки</h1>
+    <div id="my_notices"></div>
+    <form id="forma">
+        <div>
+            <label for="date">Дата
+                <span id="dateError"></span>
+            </label>
+        </div>
+        <div>
+            <input type="text" name="date" id="date" value="" class=inputs required/>
+        </div>
+        <div>
+            <label for="notices">Мои заметки:
+                <span id="commentError"></span>
+            </label>
+        </div>
+        <div>
+            <textarea name="notices" id="notices" class=inputs></textarea>
+        </div>
+        <div>
+            <input name="button" type="button" id="button" value="Записать" onclick="checkMessage();" />
+        </div>
+        <div>
+            <input name="button_2" type="button" id="button_2" value="Посмотреть заметки" onclick="show();" />
+        </div>
+        <div id="notices_local"></div>
+    </form>
+    <script src="/hw_4/script.js"></script>
+</body>
+</html>
